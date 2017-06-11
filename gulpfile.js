@@ -1,5 +1,5 @@
 var gulp = require('gulp');
-var livereload = require('gulp-livereload')
+var livereload = require('gulp-livereload');
 var uglify = require('gulp-uglifyjs');
 var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
