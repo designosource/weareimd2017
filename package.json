@@ -1,0 +1,26 @@
+{
+  "name": "WeAreIMD",
+  "version": "1.0.0",
+  "description": "Gulp dependencies for WeAreIMD",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "author": "Brent Schuddinck",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-htmlmin": "^2.0.0",
+    "gulp-imagemin": "^2.3.0",
+    "gulp-livereload": "^3.8.0",
+    "gulp-sass": "^2.0.4",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-uglifyjs": "^0.6.2",
+    "imagemin-pngquant": "^4.2.2"
+  }
+}
