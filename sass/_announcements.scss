@@ -18,19 +18,22 @@
 
 .block--announcement-date-month{
   text-transform: uppercase;
+  font-weight: 700;
   font-size: 1.4em;
-  border-bottom: 5px solid $color-red;
+  letter-spacing: 2px;
+  /*border-bottom: 5px solid $color-red;
   padding-bottom: 10px;
-  width: 60px;
-  padding-right: -30px;
+  width: 30px;*/
   display: block;
-  margin: 0 auto 15px auto;
+  margin: 0 0 10px 0;
+  text-align: center;
 }
 
 .block--announcement-date-day{
   font-size: 3.5em;
   display: block;
   margin-bottom: 30px;
+  text-align: center;
 }
 
 .block--announcement-content{
@@ -53,7 +56,8 @@
 
 .image--announcement-notification{
   background: url('../img/icons/megafoon.svg') no-repeat;
+  display: block;
   margin: 0 auto;
-  max-width: 110px;
-  min-height: 60px;
+  width: 80px;
+  height: 50px;
 }
