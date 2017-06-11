@@ -2,14 +2,13 @@
 .block--announcement{
   background-color: $color-light-blue;
   position: relative;
+  text-align: center;
   /*padding-top: -30px*/
   /*clip-path: polygon(0 0, 100% 30px, 100% 100%, 0 100%);*/
 
   .block--announcement-date{
     font-weight: 700;
     color: $color-red;
-    display: inline-block;
-    margin: 0;
   }
 
   h2{
@@ -21,22 +20,26 @@
   text-transform: uppercase;
   font-size: 1.4em;
   border-bottom: 5px solid $color-red;
-  padding-bottom: 8px;
+  padding-bottom: 10px;
+  width: 60px;
+  padding-right: -30px;
   display: block;
-  width: 30px;
-  margin-bottom: 16px;
+  margin: 0 auto 15px auto;
 }
 
 .block--announcement-date-day{
-  font-size: 4em;
+  font-size: 3.5em;
+  display: block;
+  margin-bottom: 30px;
 }
 
 .block--announcement-content{
-  display: inline-block;
+  /*display: inline-block;
   float: right;
   width: calc(100% - 85px);
-  margin-bottom: 10px;
+  margin-bottom: 10px;*/
 }
+
 
 
 /* announcements notifications */
