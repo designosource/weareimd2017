@@ -45,8 +45,67 @@
 
     <!-- STYLE -->
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Raleway:500,700" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
+<header>
+
+    <nav>
+        <a href="#" class="button--container logo">
+            <img src="img/logo/logo-weareimd.svg" alt="Logo we are Interactive Multimedia Design (IMD)">
+        </a>
+        <div class="button--container" id="toggle">
+            <span class="top"></span>
+            <span class="middle"></span>
+            <span class="bottom"></span>
+        </div>
+
+        <div class="overlay" id="overlay">
+            <nav class="overlay-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="wat-we-doen.html">Over</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </nav>
+
+    <section class="intro intro--video">
+        <video autoplay loop poster="video/video-we-are-imd-creativity-gym-fallback.jpg">
+            <source src="video/video-we-are-imd-creativity-gym.webm" type="video/webm">
+            <img src="video/video-we-are-imd-creativity-gym-fallback.jpg" alt="movie">
+        </video>
+        <h1 lang="en">We are Interactive Multimedia Design</h1>
+    </section>
+
+</header>
+<!-- JS -->
+<script>
+    $('#toggle').click(function () {
+        $(this).toggleClass('active');
+        $('#overlay').toggleClass('open');
+    });
+</script>
+
+<!-- GOOGLE ANALYTICS -->
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-77130778-1', 'auto');
+    ga('send', 'pageview');
+</script>
 
 </body>
 </html>
