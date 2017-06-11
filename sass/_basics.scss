@@ -1,0 +1,59 @@
+/* Default font-size */
+
+html {
+  /*1em is now 10px*/
+  font-size: 0.625rem;
+
+  body {
+    /*overrule default font-size*/
+    font-size: 1.4em;
+
+    /* Default font */
+    font-family: $font-content;
+  }
+}
+
+/* max content width for big screens */
+.content {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+/* Default headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-heading;
+  text-align: center;
+}
+
+h1{
+  font-size: 6rem;
+  line-height: 8rem;
+}
+
+h2{
+  font-size: 3rem;
+}
+
+h3{
+  font-size: 2.5rem;
+}
+
+/* space */
+/*.space--left {
+  padding-left: 15px;
+}
+
+.space--right {
+  padding-right: 15px;
+}*/
+
+.block--content{
+  padding: 40px 15px;
+}
+
+@media screen and (min-width: 1200px){
+  .block--content{
+    margin: 0 auto;
+    width: 1200px;
+  }
+}
