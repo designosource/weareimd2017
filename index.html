@@ -50,12 +50,11 @@
 </head>
 <body>
 <header>
-
     <nav>
-        <a href="#" class="button--container logo">
+        <a href="#" class="image--logo-imd">
             <img src="img/logo/logo-weareimd.svg" alt="Logo we are Interactive Multimedia Design (IMD)">
         </a>
-        <div class="button--container" id="toggle">
+        <div class="button--burger" id="toggle">
             <span class="top"></span>
             <span class="middle"></span>
             <span class="bottom"></span>
@@ -64,7 +63,7 @@
         <div class="overlay" id="overlay">
             <nav class="overlay-menu">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html" class="current">Home</a></li>
                     <li><a href="wat-we-doen.html">Over</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
@@ -72,20 +71,127 @@
         </div>
     </nav>
 
-    <section class="intro intro--video">
+    <section class="block--intro intro--video">
+        <h1 lang="en" class="block--content">We are Interactive Multimedia Design</h1>
+        <div class="video--overlay"></div>
         <video autoplay loop poster="video/video-we-are-imd-creativity-gym-fallback.jpg">
             <source src="video/video-we-are-imd-creativity-gym.webm" type="video/webm">
             <img src="video/video-we-are-imd-creativity-gym-fallback.jpg" alt="movie">
         </video>
-        <h1 lang="en">We are Interactive Multimedia Design</h1>
     </section>
 
 </header>
+
+<!--<section class="block--announcement block--announcement-event">
+    <div class="block--content">
+        <h2>IMD inspiratiebeurs</h2>
+        <div class="block--announcement-date">
+            <span class="block--announcement-date-month">mei</span>
+            <span class="block--announcement-date-day">24</span>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+            dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostru.</p>
+        <a href="#" class="button button--secundary">Ontdek meer</a>
+        <a href="#" class="button button--primary">Bestel tickets</a>
+    </div>
+</section>-->
+
+<section class="block--about">
+    <div class="block--content">
+        <h2>Tussentitel over IMD</h2>
+        <p>Zoek je een concrete, product-gerichte en creatieve richting? Dan is IMD misschien wel helemaal jouw ding.
+            Wij
+            bouwen apps, websites, video’s, infographics en nog zo veel meer. Een gezonde mix van brain & brawn kruipt
+            in je
+            werk waardoor je je geen moment zal vervelen.</p>
+    </div>
+</section>
+
+<section class="block--about2">
+    <div class="block--content">
+        <h2>Tussentitel over IMD</h2>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed Lorem ipsum
+            dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.</p>
+        <a href="#" class="button button--secundary">Ontdek meer</a>
+    </div>
+</section>
+
+<section class="block--trajct">
+    <div class="block--content">
+        <section class="block--traject-design">
+            <h2>Design</h2>
+            <div class="image--development"></div>
+            <p>Laat je creativiteit los op scherm en papier.
+                Schets logo’s en illustraties,
+                voeg kleuren en animaties toe en
+                wek je concepten tot leven.</p>
+            <a class="button button--secundary" href="#">Lees meer</a>
+        </section>
+        <section class="block--traject-develoment">
+            <div class="image--design"></div>
+            <h2>Development</h2>
+            <p>Als je kan coderen,
+                kan je ook écht jezelf op de markt brengen.
+                Je website wordt gelanceerd en
+                je applicatie komt in de app store terecht.</p>
+            <a class="button button--secundary" href="#">Lees meer</a>
+        </section>
+    </div>
+</section>
+
+<section class="block--newsletter">
+    <div class="block--content">
+        <h2>Nieuwsbrief</h2>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+            dolore magna.</p>
+        <div>Hier komt integratie met mailchimp form</div>
+    </div>
+</section>
+
+<section class="block--quotes">
+    <div class="block--quotes-quote block--content ">
+        <div class="quote">
+            <div class="quote-text">&quot;Hier komt een grote quote over IMD door een IMD'er&quot;</div>
+            <span>&minus; Stephanie Willekens</span>
+        </div>
+    </div>
+</section>
+
+<section class="block--revise">
+    <div class="block--content">
+        <a href="http://revise.weareimd.be">
+            <img src="img/logo/logo-weareimd.png" class="image--logo-revise"
+                 alt="Logo Revise, een digitaal inspiratieplatform gemaakt door studenten Interactive Multimedia Design.">
+        </a>
+
+        <p>Bekijk het werk van onze IMD studenten op het platform Revise. Revise is gebouwd door IMD-studenten.</p>
+
+        <span>Hier komt de integratie met revise</span>
+    </div>
+</section>
+
+<footer>
+    <div class="block--content">
+        <div>
+            <a href="http://www.thomasmore.be/ons-aanbod/informatiemanagement-multimedia/interactive-multimedia-design-imd">Interactive
+                Multimedia Design</a> - <a href="http://www.thomasmore.be">Thomas More</a>
+        </div>
+        <div>💪 <a href="http://www.designosource.be">Designosource</a></div>
+    </div>
+</footer>
+
 <!-- JS -->
 <script>
-    $('#toggle').click(function () {
-        $(this).toggleClass('active');
-        $('#overlay').toggleClass('open');
+    $(document).ready(function () {
+        $('#toggle').click(function () {
+            $(this).toggleClass('active');
+            $('#overlay').toggleClass('open');
+            if ($('#overlay').hasClass('open')) {
+                $('nav').css('background-color', 'transparent');
+            } else {
+                $('nav').css('background-color', '#fff');
+            }
+        });
     });
 </script>
 
