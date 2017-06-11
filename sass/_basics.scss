@@ -6,8 +6,8 @@ html {
 
   body {
     /*overrule default font-size*/
-    font-size: 1.4em;
-    line-height: 1.6em;
+    font-size: 1.5em;
+    line-height: 1.7em;
 
     nav{
       line-height: normal;
@@ -50,10 +50,10 @@ h3{
 /* Default section white space */
 .block--content{
   padding: 40px 15px;
+}
 
-  &.block--content-first{
-    margin-top: 40px;
-  }
+.clearfix{
+  clear: both;
 }
 
 @media screen and (min-width: 1200px){

@@ -1,7 +1,56 @@
-/* announcements */
+/* announcements events */
 .block--announcement{
   background-color: $color-light-blue;
   position: relative;
   /*padding-top: -30px*/
   /*clip-path: polygon(0 0, 100% 30px, 100% 100%, 0 100%);*/
+
+  .block--announcement-date{
+    font-weight: 700;
+    color: $color-red;
+    display: inline-block;
+    margin: 0;
+  }
+
+  h2{
+    color: $color-clean;
+  }
+}
+
+.block--announcement-date-month{
+  text-transform: uppercase;
+  font-size: 1.4em;
+  border-bottom: 5px solid $color-red;
+  padding-bottom: 8px;
+  display: block;
+  width: 30px;
+  margin-bottom: 16px;
+}
+
+.block--announcement-date-day{
+  font-size: 4em;
+}
+
+.block--announcement-content{
+  display: inline-block;
+  float: right;
+  width: calc(100% - 85px);
+  margin-bottom: 10px;
+}
+
+
+/* announcements notifications */
+.block--announcement-notification{
+  text-align: center;
+
+  p{
+    margin-top: 20px;
+  }
+}
+
+.image--announcement-notification{
+  background: url('../img/icons/megafoon.svg') no-repeat;
+  margin: 0 auto;
+  max-width: 110px;
+  min-height: 60px;
 }
