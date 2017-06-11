@@ -5,6 +5,7 @@
 
 .video--overlay{
   background-color: $color-dark-blue;
+  opacity: 0.5;
   height: 550px;
   position: absolute;
   z-index: 3;
@@ -29,6 +30,6 @@ video {
 .block--intro h1{
   position: absolute;
   z-index: 5;
-  top: 100px;
+  top: 120px;
   color: $color-clean;
 }
