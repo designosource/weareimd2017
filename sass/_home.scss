@@ -1,0 +1,100 @@
+/* homepage content */
+
+/* about first */
+
+/* about second */
+.block--about-second {
+  background-color: $color-dark-blue;
+  color: $color-clean;
+}
+
+.block--about-second:before {
+  background: $color-clean url('../img/fotos/imd-in-vr.jpg') no-repeat 53% 85%;
+  height: 350px;
+}
+
+/* border line */
+.block--about-second:before,
+.block--about-second:after,
+.block--traject-development:after
+{
+  width: 100%;
+  display: block;
+  content: '';
+  padding: 0;
+  margin: 0;
+
+  border-width: 5px 0 0 0;
+  border-style: solid;
+  border-image: url("../img/icons/border-line.png") 30 0 0 0 round;
+}
+
+/* design */
+.block--traject-design {
+  background-color: $color-light-blue;
+
+  .block--content {
+    color: $color-clean;
+  }
+
+  .image--design {
+    background: url('../img/icons/design.svg') no-repeat center;
+    display: block;
+    margin: 0 auto 20px auto;
+    height: 120px;
+  }
+}
+
+/* development */
+.image--development {
+  background: url('../img/icons/development.svg') no-repeat center;
+  display: block;
+  margin: 0 auto 20px auto;
+  height: 120px;
+}
+
+/* nieuwsbrief */
+.block--newsletter{
+  background-color: $color-dark-blue;
+
+  .block--content{
+    color: $color-clean;
+  }
+}
+
+/* quotes */
+.block--quotes{
+  background: $color-clean url('../img/fotos/studenten-in-the-gym.jpg') no-repeat 37%;
+  height: 300px;
+  background-size: cover;
+  display: block;
+  color: $color-clean;
+  text-align: center;
+
+  .image--overlay{
+    background-color: $color-dark-blue;
+    opacity: 0.5;
+    height: 550px;
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .quote-text{
+    font-family: $font-heading;
+    font-size: 2.6em;
+    line-height: 1.2em;
+    margin-bottom: 10px;
+    margin-top: 26px;
+  }
+}
+
+/* revise */
+@import "revise";
+
+/* newsletter */
+.block--newsletter{
+  color: $color-clean;
+}
