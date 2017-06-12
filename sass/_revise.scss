@@ -1,8 +1,31 @@
-.block--revise a{
-  display: block;
-  text-align: center;
+.block--revise{
+
+  .image--logo-revise{
+    display: block;
+    margin: 0 auto 20px auto;
+    width: 140px;
+  }
 }
 
-.block--revise .image--logo-revise{
-  width: 80px;
+.image--revise-work{
+  max-width: 100%;
+}
+
+.block--revise-stats{
+
+  text-align: right;
+
+  /*.block--revise-stats-views{
+    &:before{
+      content: 'oog';
+      display: inline-block;
+    }
+  }
+
+  .block--revise-stats-likes{
+    &:before{
+      content: 'likes';
+      display: inline-block;
+    }
+  }*/
 }
