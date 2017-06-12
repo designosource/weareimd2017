@@ -106,7 +106,6 @@ nav{
     height: 70%;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 4rem;
     font-weight: 700;
     text-align: center;
   }
@@ -124,6 +123,7 @@ nav{
       height: calc(100% / 3);
       position: relative;
       opacity: 0;
+      font-size: 4rem;
 
       &:first-child{
         margin-top: 20px;
